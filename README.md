@@ -1,6 +1,7 @@
 # 🥯 ToastBot
 
 **ToastBot** is an intelligent toaster system that uses real-time color sensing, adaptive control, and a custom user interface to deliver perfectly browned toast, every time. This project was developed as part of an engineering capstone project.
+![ToastBot Assembled](images/toastbot_demo.jpg)
 
 ---
 
@@ -27,31 +28,24 @@ ToastBot/
 
 ## 🔌 Components
 
-### Arduino (`/Arduino`)
+### Arduino
 - Communicates with APDS-9960 sensors through I2C multiplexer
 - Reads RGB values, converts to L\*a\*b\*, and sends data to Python controller
 - Controls heater and toast-ready pin (electromagnet)
 
-### Controls (`/Controls`)
+### Controls
 - Python-based adaptive algorithm that:
   - Tracks browning phase (goldening → browning)
   - Predicts expected R-values using empirical equations
   - Adjusts power in real time based on sensor error
   - Logs data for analysis and visualization
 
-### UI (`/UI`)
+### UI
+![ToastBot UI](images/toastbot_ui.png)
 - ESP32-based M5Dial interface
 - Lets users choose from 6 toast shades (very light → very dark)
 - Sends shade selection to Arduino via I2C
 - Displays toast progress and completion status
-
----
-
-## 📸 Images
-
-![ToastBot Assembled](images/toastbot_demo.jpg)
-
-![ToastBot UI](images/toastbot_ui.png)
 
 ---
 
