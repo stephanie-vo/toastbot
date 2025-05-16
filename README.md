@@ -47,9 +47,11 @@ ToastBot/
 
 ---
 
-## 📸 Screenshots
+## 📸 Images
 
-![UI Screenshot - Toast Selection](images/toast_ui_sample.png)
+![ToastBot Assembled](images/toastbot_demo.jpg)
+
+![ToastBot UI](images/toastbot_ui.png)
 
 ---
 
